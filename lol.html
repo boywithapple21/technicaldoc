@@ -1,0 +1,156 @@
+<!doctype html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>C++ Documentation</title>
+</head>
+<body>
+    <main id="main-doc">
+        <nav id="navbar">
+            <header>C++ Documentation</header>
+            <a class="nav-link" href="#Introduction">Introduction</a>
+            <a class="nav-link" href="#What_you_should_already_know">What you should already know</a>
+            <a class="nav-link" href="#Language">Language</a>
+            <a class="nav-link" href="#Operators">Operators</a>
+            <a class="nav-link" href="#Functions">Functions</a>
+            <a class="nav-link" href="#Arrays_in_C++">Arrays in C++</a>
+            <a class="nav-link" href="#OOP_in_C++">OOP in C++</a>
+            
+        </nav>
+        <section class="main-section" id="Introduction">
+            <header>Introduction</header>
+            <p>
+                C++ is a general-purpose programming language that was developed by Bjarne Stroustrup as an extension of the C language, or "C with Classes". It has imperative, object-oriented and generic programming features, while also providing facilities for low-level memory manipulation. It is almost always implemented as a compiled language, and many vendors provide C++ compilers, including the Free Software Foundation, Microsoft, Intel, and IBM, so it is available on many platforms.      
+            </p>
+        </section>
+        <section class="main-section" id="What_you_should_already_know">
+                <header>What you should already know</header>
+                <p>
+                    This technical documentation assumes that you already acquired the following skills:
+                    <ul>
+                        <li>
+                            How to navigate through the digital world of the internet.
+                        </li>
+                        <li>
+                            Basic programming knowledge.
+                        </li>
+                        <li>
+                            Basic HTML knowledge.
+                        </li>
+                    </ul>
+                </p>
+            </section>
+        <section class="main-section" id="Language">
+            <header>Language</header>
+            <p>
+                    The C++ language has two main components: a direct mapping of hardware features provided primarily by the C subset, and zero-overhead abstractions based on those mappings. Stroustrup describes C++ as "a light-weight abstraction programming language [designed] for building and using efficient and elegant abstractions"; and "offering both hardware access and abstraction is the basis of C++. Doing it efficiently is what distinguishes it from other languages".
+
+            <p>C++ inherits most of C's syntax. The following is Bjarne Stroustrup's version of the Hello world program that uses the C++ Standard Library stream facility to write a message to standard output:</p>
+                    <code>
+                            #include <iostream>
+
+                                    int main()
+                                    {
+                                        std::cout << "Hello, world!\n";
+                                    }
+                    </code>    
+            </p>
+        </section>
+        <section class="main-section" id="Operators">
+            <header>Operators</header>
+            <p>
+                Operators are the foundation of any programming language. Thus the functionality of C/C++ programming language is incomplete without the use of operators. We can define operators as symbols that helps us to perform specific mathematical and logical computations on operands. In other words we can say that an operator operates the operands.
+
+            </p>
+        </section>
+        <section class="main-section" id="Functions">
+            <header>Functions</header>
+            <p>
+                A function is a set of statements that take inputs, do some specific computation and produces output.
+            </p>
+            <p>The idea is to put some commonly or repeatedly done task together and make a function, so that instead of writing the same code again and again for different inputs, we can call the function.
+            </p>
+            <p>
+            Example: 
+            Below is a simple C program to demonstrate functions in C.
+            </p> 
+            <code> #include <stdio.h> 
+
+                    // An example function that takes two parameters 'x' and 'y' 
+                    // as input and returns max of two input numbers 
+                    int max(int x, int y) 
+                    { 
+                        if (x > y) 
+                        return x; 
+                        else
+                        return y; 
+                    } 
+                    
+                    // main function that doesn't receive any parameter and 
+                    // returns integer. 
+                    int main(void) 
+                    { 
+                        int a = 10, b = 20; 
+                    
+                        // Calling above function to find max of 'a' and 'b' 
+                        int m = max(a, b); 
+                    
+                        printf("m is %d", m); 
+                        return 0; 
+                    }
+                </code> 
+                            
+            
+            <p>Output:</p>
+            <code>
+                m is 20
+            </code>
+        </section>  
+        <section class="main-section" id="Arrays_in_C++">
+            <header>Arrays in C++</header>
+            <p>
+                An array is collection of items stored at continuous memory locations.
+            </p>
+            <p>
+                We can use normal variables (v1, v2, v3, ..) when we have small number of objects, but if we want to store large number of instances, it becomes difficult to manage them with normal variables. The idea of array is to represent many instances in one variable.
+            </p>
+            <p>
+                    We can declare an array by specifying its type and size or by initializing it or by both.
+                </p>
+                <ol>
+                    <li>
+                        Array declaration by specifying size
+                    </li>
+                
+                <code>
+                        // Array declaration by specifying size 
+                        int arr1[10]; 
+                        
+                        // With recent C/C++ versions, we can also 
+                        // declare an array of user specified size 
+                        int n = 10; 
+                        int arr2[n]; 
+                </code>
+                
+                    <li>
+                            Array declaration by initializing elements
+                    </li>
+                <code>
+                        // Array declaration by initializing elements 
+                        int arr[] = { 10, 20, 30, 40 } 
+                        
+                        // Compiler creates an array of size 4. 
+                        // above is same as "int arr[4] = {10, 20, 30, 40}" 
+                </code>
+                </ol>
+        </section>
+        <section class="main-section" id="OOP_in_C++">
+            <header>OOP in C++</header>
+            <p>
+                Object oriented programming – As the name suggests uses objects in programming. Object oriented programming aims to implement real world entities like inheritance, hiding, polymorphism etc in programming. The main aim of OOP is to bind together the data and the functions that operates on them so that no other part of code can access this data except that function.
+            </p>
+            
+        </section>
+    </main>
+</body>
+</html>
